@@ -1,0 +1,22 @@
+// Цвета
+:root {
+    --white: #fff;
+    --pink: #ff0080;
+    --green: #00f086;
+    --black: #222;
+    --gray-bg: #eeeef2;
+    --gray-dark-bg: #dddde1;
+    --stroke-gray-bg: #d6d6dc;
+    --gray-text: #696b6d;
+    --light-gray-text: #969899;
+    --stroke-dark-gr-bg: #bcc2c6;
+}
+
+// Шрифты
+:root {
+    --font-family: "Golos Text", sans-serif;
+}
+
+// SCSS-переменные (для использования в миксинах и вычислениях)
+$font-family-base: "Golos Text", sans-serif;
+$transition-base: 0.3s ease;
