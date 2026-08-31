@@ -1,0 +1,43 @@
+.dropdown-element{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: -182px;
+    max-width: max-content;
+    margin: auto;
+    display: none;
+
+    &.open{
+        display: flex;
+    }
+    &::before{
+        content: "";
+        width: 31px;
+        height: 20px;
+        background-image: url(/images/poligon.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        z-index: 2;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: -16px;
+    }
+
+    &__content{
+        background: var(--gray-bg);
+        border: 1px solid var(--gray-dark-bg);
+        border-radius: 12px;
+        padding: 15px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+    }
+}

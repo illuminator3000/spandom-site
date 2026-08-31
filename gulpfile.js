@@ -7,7 +7,7 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const fileInclude = require('gulp-file-include');
 const browserSync = require('browser-sync').create();
-
+const buffer = require('gulp-buffer');
 // Пути к файлам
 const paths = {
     styles: {
@@ -63,11 +63,11 @@ function buildHtml() {
 
 // Задача: копирование изображений
 function copyImages() {
-    return gulp.src(paths.images.src)
+    return gulp.src(paths.images.src, { encoding: false })
+        .pipe(buffer())
         .pipe(gulp.dest(paths.images.dest))
         .pipe(browserSync.stream());
 }
-
 // Задача: слежение за изменениями
 function watchFiles() {
     browserSync.init({

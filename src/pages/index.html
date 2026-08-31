@@ -9,15 +9,5 @@
     <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Добро пожаловать!</h1>
-        <p class="text-center text-muted">Это главная страница</p>
-        
-        <!-- Подключаем блок акций через @@include -->
-        @@include('../components/sale.html')
-    </div>
-    
-    <!-- Подключаем готовые скрипты (собранные Gulp) -->
-    <script src="../js/main.min.js"></script>
-</body>
-</html>
+    @@include('../components/header.html')
+    @@include('../components/footer.html')
