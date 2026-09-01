@@ -1,0 +1,30 @@
+.spanbond-card{
+    background: var(--gray-dark-bg);
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+
+    &__image{
+        img{
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            aspect-ratio: 4/4 ;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 105%;
+        color: var(--black);
+        position: absolute;
+        padding: 40px 0 0 40px;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        max-width: 284px;
+    }
+}
+.row--spanbond{
+    gap: 20px 0;
+}

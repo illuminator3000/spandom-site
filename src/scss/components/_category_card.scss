@@ -29,16 +29,3 @@
         }
     }
 }
-.category-slider{
-    position: relative;
-}
-.category-block{
-    overflow: hidden;
-    margin-top: 50px;
-}
-
-@media(max-width:1600px){
-    .category-slide{
-        max-width: max-content;
-    }
-}
