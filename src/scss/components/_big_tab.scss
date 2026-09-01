@@ -1,0 +1,39 @@
+.big-tab{
+    border: 1px solid var(--stroke-gray-bg);
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;  
+    gap: 22px; 
+    flex: 1;
+    justify-content: center;
+
+    @media(max-width:767px){
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    &__icon{
+        border-radius: 16px;
+        background: var(--gray-dark-bg);
+        padding: 22px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            min-width: 40px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 19px;
+        color: var(--black);
+        max-width: 192px;
+
+        @media(max-width:767px){
+            font-size: 16px;
+        }
+    }
+}
+
+

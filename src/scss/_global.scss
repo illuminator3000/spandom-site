@@ -73,3 +73,28 @@ body{
 .swiper-slider  .swiper-button-prev{
   left: -4px;
 }
+
+.section-title{
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 103%;
+  text-transform: uppercase;
+  color: var(--black);
+
+    @media(max-width:1199px){
+      margin-bottom: 40px;
+    }
+    @media(max-width:767px){
+      font-size: 38px;
+    }
+    @media(max-width:575px){
+      font-size: 30px;
+    }
+}
+.section{
+  margin: 110px 0;
+
+  @media(max-width:767px){
+       margin: 50px 0;
+    }
+}
