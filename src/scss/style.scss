@@ -1,11 +1,11 @@
 // Импортируем Bootstrap
 @use '../../node_modules/bootstrap/scss/bootstrap';
-@import '../../node_modules/@fontsource/golos-text/index.css';
 @import 'variables';
 @import 'reset';
 @import 'global';
 @import 'components/header';
 @import 'components/dropdown';
+@import 'components/_fs_slider';
 
 // @import 'components/header';
 // @import 'components/footer';

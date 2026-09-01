@@ -25,6 +25,10 @@ const paths = {
     images: {
         src: 'src/images/**/*',
         dest: 'dist/images/'
+    },
+     swiper: {
+        src: 'node_modules/swiper/swiper-bundle.min.css',
+        dest: 'dist/css/'
     }
 };
 
@@ -42,7 +46,13 @@ function buildStyles() {
 
 // Задача: сборка скриптов
 function buildScripts() {
-    return gulp.src(paths.scripts.src)
+     return gulp.src([
+        // Сначала библиотеки (важно!)
+        'node_modules/swiper/swiper-bundle.min.js',
+        'node_modules/imask/dist/imask.min.js',
+        // Потом ваш код
+        paths.scripts.src
+    ])
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
@@ -68,6 +78,11 @@ function copyImages() {
         .pipe(gulp.dest(paths.images.dest))
         .pipe(browserSync.stream());
 }
+function copySwiperCSS() {
+    return gulp.src(paths.swiper.src)
+        .pipe(gulp.dest(paths.swiper.dest))
+        .pipe(browserSync.stream());
+}
 // Задача: слежение за изменениями
 function watchFiles() {
     browserSync.init({
@@ -78,6 +93,7 @@ function watchFiles() {
     });
 
     gulp.watch(paths.styles.src, buildStyles);
+    gulp.watch(paths.swiper.src, copySwiperCSS);
     gulp.watch(paths.scripts.src, buildScripts);
     gulp.watch('src/components/**/*.html', buildHtml);
     gulp.watch(paths.html.src, buildHtml);
@@ -86,9 +102,9 @@ function watchFiles() {
 
 // Задача по умолчанию (запускаем gulp)
 exports.default = gulp.series(
-    gulp.parallel(buildStyles, buildScripts, buildHtml, copyImages),
+    gulp.parallel(buildStyles, buildScripts, buildHtml, copyImages, copySwiperCSS),
     watchFiles
 );
 
 // Задача для финальной сборки
-exports.build = gulp.parallel(buildStyles, buildScripts, buildHtml, copyImages);
+exports.build = gulp.parallel(buildStyles, buildScripts, buildHtml, copyImages, copySwiperCSS);
