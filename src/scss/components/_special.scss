@@ -1,0 +1,21 @@
+.special{
+    border-radius: 40px;
+    background: var(--white);
+    padding: 20px 0;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+.special-title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    span{
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: var(--black);
+    }
+}

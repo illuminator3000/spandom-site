@@ -4,6 +4,7 @@
 
 body{
     font-family: var(--font-family);
+    background: var(--gray-bg);
 }
 // Простой класс без миксина
 .container-custom {
@@ -28,7 +29,47 @@ body{
   }
 }
 
-.row>*{
-    padding-right: calc(var(--bs-gutter-x) * .4);
-    padding-left: calc(var(--bs-gutter-x) * .4);
+.container-fluid{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+// .row>*{
+//     padding-right: calc(var(--bs-gutter-x) * .4);
+//     padding-left: calc(var(--bs-gutter-x) * .4);
+// }
+
+.default-tab{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 7px 15px;
+  border-radius: 7px;
+  background: var(--pink);
+  max-width: max-content;
+}
+.default-tab--new{
+  color: var(--black);
+  background: var(--green);
+}
+
+.swiper-button-next, .swiper-button-prev{
+  background: var(--white);
+  color: var(--white);
+  border-radius: 10px;
+
+  &:hover{
+     color: var(--green);
+     
+     path{
+      stroke-opacity: 1; 
+     }
+  }
+}
+
+.swiper-slider .swiper-button-next{
+  right: -4px;
+}
+.swiper-slider  .swiper-button-prev{
+  left: -4px;
 }
