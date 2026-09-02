@@ -156,8 +156,28 @@ body{
   transition: all var(--default-transition) linear;
   border: 1px solid var(--pink);
   &:hover{
-    background: transparent;
-    color: var(--pink);
+    background: var(--green);
+    color: var(--black);
     cursor: pointer;
+    border-color: var(--green);
+  }
+}
+
+.default-input-text{
+  border: 1px solid  var(--stroke-dark-gr-bg);;
+  background: transparent;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: var(--black);
+  &::placeholder{
+    color: var(--light-gray-text);
+  }
+
+  @media(max-width:575px){
+    font-size: 14px;
   }
 }
