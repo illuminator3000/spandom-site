@@ -1,0 +1,20 @@
+@import 'product_card';
+
+.product-block{
+    overflow: hidden;
+}
+.product-block__tab{
+    background: var(--gray-dark-bg);
+    border-radius: 9px;
+    margin-bottom: 12px;
+    max-width: max-content;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.section-title--product-block{
+    margin-bottom: 40px;
+    max-width: 717px;
+}

@@ -73,7 +73,10 @@ body{
 .swiper-slider  .swiper-button-prev{
   left: -4px;
 }
-
+.swiper-slider .swiper-button-next svg, .swiper-slider .swiper-button-prev svg{
+  min-width: 58px;
+  height: auto;
+}
 .section-title{
   font-weight: 600;
   font-size: 58px;
@@ -96,5 +99,15 @@ body{
 
   @media(max-width:767px){
        margin: 50px 0;
+    }
+}
+
+.favorite-btn path{
+  transition: .2s var(--default-transition) linear;
+}
+.favorite-btn:hover{
+    cursor: pointer;
+    path{
+      fill: var(--pink);
     }
 }

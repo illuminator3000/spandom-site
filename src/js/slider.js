@@ -52,4 +52,24 @@ document.addEventListener('DOMContentLoaded' , function(){
             },
         }
     })
+    const productsSlider = new Swiper('.product-slider', {
+        slidesPerView: 'auto',
+        freeMode: true,
+        spaceBetween: 14,
+        speed: 400,
+        grabCursor: true,
+        freeModeMomentum: true,
+        freeModeMomentumRatio: 0.8,
+        freeModeMomentumVelocityRatio: 0.8,
+        touchRatio: 1.2,
+        navigation: {
+        nextEl: '.navigation-button-next',
+        prevEl: '.navigation-button-prev',
+        },
+            breakpoints: {
+            1600:{
+                slidesPerView: 4,
+            },
+        }
+    })
 })
