@@ -49,4 +49,18 @@ document.addEventListener('DOMContentLoaded', function(){
             </svg>`
       }
    })
+
+
+   document.addEventListener('click', function(e){
+     const target =  e.target.closest('.tags-switcher__item');
+     if(!target){
+         return;
+     }
+     const container = target.closest('.tags-switcher');
+     if(!container){
+         return
+     }
+     container.querySelector('.tags-switcher__item.active')?.classList.remove('active');
+     target.classList.add('active')
+   })
 });

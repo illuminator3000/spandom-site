@@ -111,3 +111,33 @@ body{
       fill: var(--pink);
     }
 }
+
+
+.tags-switcher{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap:10px;
+  overflow: auto;
+  &__item{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 110%;
+      color: var(--black);
+      background: var(--gray-dark-bg);
+      border-radius: 52px;
+      padding: 12px 30px;
+      width: 100%;
+      max-width: 252px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--default-transition) linear;
+      text-wrap: nowrap;
+      &.active{
+          background-color: var(--green);
+      }
+  }
+
+}
