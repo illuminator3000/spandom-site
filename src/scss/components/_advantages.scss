@@ -3,19 +3,50 @@
     position: relative;
     overflow: hidden;
 
+    @media(max-width:991px){
+        border-radius: 0;
+    }
     &__advantages{
         position: absolute;
         bottom: 20px;
         left: 0;
         right: 0;
         width: 100%;
+
+        @media(max-width:991px){
+            position: static;
+            margin-top: 40px;
+        }
+    }
+    &__container{
+        video{
+            display: none;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        width: 117px;
+        height: 117px;
+        margin: auto;
+        inset: 0;
+        cursor: pointer;
+        @media(max-width:991px){
+            width: 90px;
+            height: 90px;
+                svg{
+                    width: 90px;
+                    height: 90px;
+                }
+        }
     }
 }
 .video-block__container-image{
-     img{
+    position: relative;
+    img{
         width: 100%;
         height: 100%;
-     }
+    }
 }
 .advantages-slide{
     height: auto;
@@ -37,6 +68,11 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
+        @media(max-width:991px){
+            background: var(--gray-dark-bg);
+        }
+        
     }
 
     &__title{
@@ -44,7 +80,8 @@
         font-size: 19px;
         color: var(--gray-text);
         margin-bottom: 53px;
-      
+        
+        
     }
 
     &__value{
@@ -56,6 +93,10 @@
 
         @media(max-width:991px){
             font-size: 30px;
+        }
+
+        @media(max-width:575px){
+            font-size: 20px;
         }
     }
     &__name{
@@ -78,5 +119,9 @@
         font-size: 18px;
         color: var(--white);
         max-width: max-content;
+
+          @media(max-width:575px){
+            font-size: 14px;
+          }
     }
 }
