@@ -64,4 +64,13 @@ document.addEventListener('DOMContentLoaded', function(){
      container.querySelector('.tags-switcher__item.active')?.classList.remove('active');
      target.classList.add('active')
    })
+
+   document.addEventListener('click', function(e){
+      const target = e.target.closest('.questions-item__top');
+      if(!target) return;
+
+      const parent = target.closest('.questions-item');
+      $(parent.querySelector('.questions-item__body')).slideToggle();
+
+   })
 });

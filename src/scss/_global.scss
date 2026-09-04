@@ -199,3 +199,19 @@ h1.section-title{
   opacity: 1 !important;
   pointer-events: unset !important;
 }
+.one-click{
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--black);
+  background: var(--gray-dark-bg);
+  border-radius: 69px;
+  padding: 20px;
+  width: 100%;
+  max-width: 239px;
+
+}
+.section-slider-title{
+    max-width:770px;
+    margin-bottom: 30px;
+}

@@ -97,4 +97,20 @@ document.addEventListener('DOMContentLoaded' , function(){
             },
         }
     })
+
+    const productSlider = new Swiper('.detail-product__slider', {
+        slidesPerView: 1,
+        lockClass: '',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    })
+    const reviewsSlider = new Swiper('.reviews-block__slider', {
+        slidesPerView: 1,
+        lockClass: '',
+        loop: true,
+    })
+
 })
