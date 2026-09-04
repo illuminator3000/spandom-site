@@ -48,6 +48,7 @@ function buildStyles() {
 function buildScripts() {
      return gulp.src([
         // Сначала библиотеки (важно!)
+        'node_modules/jquery/dist/jquery.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/imask/dist/imask.min.js',
         // Потом ваш код

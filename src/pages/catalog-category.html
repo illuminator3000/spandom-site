@@ -1,0 +1,36 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"><h1 class="section-title">Каталог</h1></div>
+            </div>
+        </div>
+        @@include('../components/banner.html',
+        {
+            "margin": "",
+
+        })
+        <section class="catalog-page-block">
+            <div class="container-fluid">
+                <div class="row row--catalog">
+                    <div class="col-xl-3">
+                        @@include('../components/filter.html')
+                    </div>
+                    <div class="col-xl-9">
+                        @@include('../components/catalog-tags.html')
+                        @@include('../components/catalog-cards.html')
+                        @@include('../components/catalog-pagination.html')
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('../components/news-block.html', {
+            'title': 'Полезная информация',
+        })
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')

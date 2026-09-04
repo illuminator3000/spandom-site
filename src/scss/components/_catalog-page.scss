@@ -1,0 +1,9 @@
+.catalog-page-block{
+    margin: 50px 0;
+}
+.row--catalog{
+    gap: 20px 0
+}
+@import 'filter';
+@import 'catalog-tags';
+@import 'pagination';

@@ -1,0 +1,38 @@
+.catalog-tags{
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+    &__item{
+        background: var(--gray-dark-bg);
+        border-radius: 52px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 12px 25px;
+        cursor: pointer;
+        &-name{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            color: var(--black);
+            text-wrap: nowrap;
+        }
+    
+       &.active{
+            background-color: var(--green);
+            .catalog-tags__item-icon{
+                display: block;
+            }
+       } 
+        &-icon{
+            display: none;
+            svg{
+                min-width: 11px;
+            }
+        }
+    }
+}

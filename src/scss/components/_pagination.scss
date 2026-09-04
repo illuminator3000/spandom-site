@@ -1,0 +1,37 @@
+.bx-pagination-container{
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    li{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--black);
+        
+        &.bx-active{
+            color: var(--pink);
+        }
+
+        &:hover{
+            svg{
+                rect:first-child{
+                    fill: var(--green);
+                    
+                }
+                 rect:last-child{
+                    stroke: var(--green);
+                }
+                path{
+                    stroke-opacity:1 ;
+                }
+            }
+        }
+        svg{
+            rect, path{transition: all var(--default-transition) linear;}
+            }
+    }
+}

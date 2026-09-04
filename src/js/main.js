@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+
    const headerMenuItems = document.querySelectorAll('.header-menu__item');
    console.log(headerMenuItems);
    const DELAY = 300;
