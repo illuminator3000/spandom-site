@@ -1,0 +1,36 @@
+.breadscrumbs{
+    margin: 20px 0 50px;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    a{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        color: #abafb2;
+    }
+    span{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        color: var(--gray-text);
+    }
+    &__item{
+        position: relative;
+    }
+    &__item:not(:first-child)::before{
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 1px;
+        bottom: 0;
+        margin: auto;
+        width: 1px;
+        height: 8px;
+        background-color: #abafb2;
+    }
+}

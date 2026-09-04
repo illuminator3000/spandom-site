@@ -5,11 +5,16 @@
         @@include('../components/interesting.html')
         @@include('../components/hero-block.html')
         @@include('../components/spanbond.html')
-        @@include('../components/banner.html')
+        @@include('../components/banner.html',{
+            'margin':'section'
+        })
         @@include('../components/product-block.html')
         @@include('../components/sale-block.html')
         @@include('../components/hit-block.html')
-        @@include('../components/catalog-block.html')
+        @@include('../components/catalog-block.html', {
+            'margin': 'section',
+            'title': 'true'
+        })
         @@include('../components/news-block.html')
         @@include('../components/advantages-block.html')
         @@include('../components/inline-form.html')

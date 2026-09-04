@@ -83,6 +83,9 @@ body{
   min-width: 58px;
   height: auto;
 }
+h1.section-title{
+  margin-bottom: 30px;
+}
 .section-title{
   font-weight: 600;
   font-size: 58px;
@@ -107,7 +110,9 @@ body{
        margin: 50px 0;
     }
 }
-
+.section--small{
+  margin: 20px 0;
+}
 .favorite-btn path{
   transition: .2s var(--default-transition) linear;
 }
