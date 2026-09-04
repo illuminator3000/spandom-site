@@ -151,5 +151,9 @@
         font-weight: 400;
         font-size: 15px;
         color: var(--black);
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }

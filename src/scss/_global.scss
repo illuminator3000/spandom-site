@@ -69,9 +69,15 @@ body{
 
 .swiper-slider .swiper-button-next{
   right: -4px;
+  min-width: 58px;
+  display: flex;
+  height: auto;
 }
 .swiper-slider  .swiper-button-prev{
   left: -4px;
+  min-width: 58px;
+  display: flex;
+  height: auto;
 }
 .swiper-slider .swiper-button-next svg, .swiper-slider .swiper-button-prev svg{
   min-width: 58px;
@@ -180,4 +186,11 @@ body{
   @media(max-width:575px){
     font-size: 14px;
   }
+}
+.swiper-button-lock{
+  display: block;
+}
+.swiper-button-disabled{
+  opacity: 1 !important;
+  pointer-events: unset !important;
 }

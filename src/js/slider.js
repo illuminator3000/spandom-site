@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded' , function(){
     
     const fsSlider = new Swiper('.fs_slider', {
         slidesPerView: 1,
+        lockClass: '',
         loop: true,
         breakpoints: {
         768: {
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded' , function(){
         spaceBetween: 14,
         speed: 400,
         grabCursor: true,
+        lockClass: '',
         freeModeMomentum: true,
         freeModeMomentumRatio: 0.8,
         freeModeMomentumVelocityRatio: 0.8,
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded' , function(){
         spaceBetween: 14,
         speed: 400,
         grabCursor: true,
+        lockClass: '',
         freeModeMomentum: true,
         freeModeMomentumRatio: 0.8,
         freeModeMomentumVelocityRatio: 0.8,
@@ -57,6 +60,7 @@ document.addEventListener('DOMContentLoaded' , function(){
         freeMode: true,
         spaceBetween: 14,
         speed: 400,
+        lockClass: '',
         grabCursor: true,
         freeModeMomentum: true,
         freeModeMomentumRatio: 0.8,
@@ -77,6 +81,7 @@ document.addEventListener('DOMContentLoaded' , function(){
         freeMode: true,
         spaceBetween: 14,
         speed: 400,
+        lockClass: '',
         grabCursor: true,
         freeModeMomentum: true,
         freeModeMomentumRatio: 0.8,
