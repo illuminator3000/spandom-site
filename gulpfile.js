@@ -51,6 +51,7 @@ function buildScripts() {
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/imask/dist/imask.min.js',
+        'node_modules/lightbox2/dist/js/lightbox.min.js',
         // Потом ваш код
         paths.scripts.src
     ])

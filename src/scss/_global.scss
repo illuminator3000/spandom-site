@@ -215,3 +215,21 @@ h1.section-title{
     max-width:770px;
     margin-bottom: 30px;
 }
+.block-twice{
+    padding: 40px;
+    border-radius: 40px;
+    background: var(--white);
+}
+.block-title{
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.section--mb{
+  margin-bottom: 110px;
+    @media(max-width:767px){
+      margin-bottom: 50px;
+    }
+}
