@@ -103,6 +103,9 @@ h1.section-title{
       font-size: 30px;
     }
 }
+.section-title--mb{
+  margin-bottom: 40px;
+}
 .section{
   margin: 110px 0;
 
@@ -249,6 +252,10 @@ h1.section-title{
   display: flex;
     iframe{
         max-width: 100%;    
+
+        @media(max-width:767px){
+            max-height: 420px;
+        }
         
     }
 }

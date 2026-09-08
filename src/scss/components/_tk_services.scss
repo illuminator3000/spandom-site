@@ -1,0 +1,42 @@
+.sub-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    color: var(--gray-text);
+    margin-bottom: 20px;
+}
+.tk-service-card{
+    background: var(--white);
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+
+    &__tag{
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: var(--black);
+        border-radius: 9px;
+        background: var(--gray-dark-bg);
+        margin-bottom: 128px;
+        padding: 9px 18px;
+        max-width: max-content;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 110%;
+        color: var(--black);
+        margin-top: auto;
+        margin-bottom: 15px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: var(--gray-text);
+    }
+}
