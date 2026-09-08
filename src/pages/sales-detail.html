@@ -1,0 +1,93 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <section class="section--mb">
+            <div class="container-fluid">
+                <div class="row row--sale">
+                    <div class="col-xl-6"> 
+                        <div class="sale-card sale-card--sale sale-card--dark">
+                            <div class="sale-card__content">
+                                <div class="default-tab sale-card__tab">скидка 50%</div>
+                                <div class="sale-card__title">на трендовые цвета этого лета</div>
+                                <div class="sale-card__detail">
+                                    <div class="sale-card__detail__info">
+                                        <div class="sale-card__detail__info-low-text">3216 ₽/м2</div>
+                                        <div class="sale-card__detail__info-normal-text">1608 ₽/м2</div>
+                                        <div class="sale-card__detail__info-substr">*Акция действует до конца августа</div>
+                                    </div>
+                                    <div class="sale-card__detail__image">
+                                        <img src="/images/sale-detail.png" width="490" height="160" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6"> 
+                        <div class="sale-detail__content">
+                            <div class="sale-detail__date">Акция действует до 31 августа</div>
+                            <h1 class="sale-detail__title">Скидка 10% на спанбонд в осенних оттенках</h1>
+                            <div class="sale-detail__description">
+                                <p>Dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            </div>
+        </section>
+        <section class = "section product-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title section-slider-title">Товары, которые участвуют в акции</h2>
+                    </div>
+                </div>
+                @@include('../components/sale-products.html')
+                </div>
+            </div>
+        </section>
+       <section class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title section-title--hit-block">Другие предложения</h2>
+                </div>
+            </div>
+            <div class="row row--sale">
+                <div class="col-xl-6"> 
+                    <div class="sale-card sale-card--new">
+                        <div class="sale-card__content">
+                            <div class="default-tab default-tab--new sale-card__tab">скидка 50%</div>
+                            <div class="sale-card__title">спанбонд в цвете мокко</div>
+                        </div>
+                        <div class="sale-card__bg-image">
+                            <img src="/images/sale-bg.png" width="770" height="425" loading="lazy" alt="">
+                        </div>
+                    </div>         
+                </div>
+                 <div class="col-xl-6"> 
+                    <div class="sale-card sale-card--sale sale-card--dark">
+                        <div class="sale-card__content">
+                            <div class="default-tab sale-card__tab">скидка 50%</div>
+                            <div class="sale-card__title">на трендовые цвета этого лета</div>
+                            <div class="sale-card__detail">
+                                <div class="sale-card__detail__info">
+                                    <div class="sale-card__detail__info-low-text">3216 ₽/м2</div>
+                                    <div class="sale-card__detail__info-normal-text">1608 ₽/м2</div>
+                                    <div class="sale-card__detail__info-substr">*Акция действует до конца августа</div>
+                                </div>
+                                <div class="sale-card__detail__image">
+                                    <img src="/images/sale-detail.png" width="490" height="160" loading="lazy" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')

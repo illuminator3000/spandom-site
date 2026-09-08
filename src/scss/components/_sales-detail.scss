@@ -1,0 +1,35 @@
+.sale-detail{
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+    &__date{
+        font-weight: 600;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: var(--black);
+        padding: 8px 18px;
+        max-width: max-content;
+        background: var(--gray-dark-bg);
+        border-radius: 9px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 47px;
+        line-height: 107%;
+        color: var(--black);
+        margin-bottom: 30px;
+    }
+    &__description{
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145%;  
+            color: var(--black);
+            margin-bottom: 15px;
+        }
+        *:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
