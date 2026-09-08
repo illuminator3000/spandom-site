@@ -73,4 +73,6 @@ document.addEventListener('DOMContentLoaded', function(){
       $(parent.querySelector('.questions-item__body')).slideToggle();
 
    })
+
+   
 });

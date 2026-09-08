@@ -1,0 +1,40 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"><h1 class="section-title">Статус заказа</h1></div>
+            </div>
+        </div>
+        <section class = "section--mb">
+            <div class="container-fluid">
+                <div class="row row--catalog">
+                    <div class="col-xl-6">
+                        <div class="sticky-container">
+                            <div class="block-twice">
+                                <div class="status-title">Вы можете узнать статус своего заказа онлайн:</div>
+                                <form id = "getStatus" action="" class="status-form inline-form-block__form">
+                                        <label>
+                                            <span>Номер вашего заказа</span>
+                                            <input class="default-input-text" type="text" placeholder="Введите номер заказа, например: 83">
+                                        </label>
+                                        <button type="submit" class="default-btn inline-form__button">Найти заказ</button>
+                                </form>
+                                <div class="status-form__result">
+                                    *Номер заказа можно найти в письме, которое мы присылали вам на почту после оформления заказа или в личном кабинете во вкладке «заказы»
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="status-image">
+                            <img src="/images/status.png" width="770" height="437" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')
