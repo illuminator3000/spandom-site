@@ -1,0 +1,26 @@
+.contact-btn{
+    max-width: 284px ;
+}
+.contact-phone{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    a{
+        font-weight: 500;
+        font-size: 32px;
+        color: var(--black);
+
+        @media(max-width:575px){
+            font-size: 25px;
+        }
+    }
+    span{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--gray-text);
+        @media(max-width:575px){
+            font-size: 14px;
+        }
+    }
+}

@@ -225,7 +225,13 @@ h1.section-title{
     color: var(--black);
     margin-bottom: 20px;
 }
-
+.block-text{
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 110%;
+  color: var(--black);
+  margin-bottom: 17px;
+}
 .section--mb{
   margin-bottom: 110px;
     @media(max-width:767px){
