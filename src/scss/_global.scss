@@ -209,7 +209,6 @@ h1.section-title{
   padding: 20px;
   width: 100%;
   max-width: 239px;
-
 }
 .section-slider-title{
     max-width:770px;
@@ -231,5 +230,19 @@ h1.section-title{
   margin-bottom: 110px;
     @media(max-width:767px){
       margin-bottom: 50px;
+    }
+}
+.block-twice--mb{
+  margin-bottom: 20px;
+}
+.map-block{
+  border: 1px solid var(--stroke-gray-bg);
+  border-radius: 40px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+    iframe{
+        max-width: 100%;    
+        
     }
 }

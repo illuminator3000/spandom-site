@@ -1,0 +1,41 @@
+.reqisits-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.reqisits-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    &__name{
+        font-weight: 400;
+        font-size: 19px;
+        color: var(--gray-text);
+        @media(max-width:767px){
+            font-size: 16px;
+        }
+    }
+    &__value{
+       font-weight: 600;
+        font-size: 19px;
+        color: var(--black);
+        @media(max-width:767px){
+            font-size: 16px;
+        }
+    }
+}
+.reqisits-download{
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--gray-text);
+    border-bottom:1px solid var(--light-gray-text);
+    // padding-bottom: 6px;
+    max-width: max-content;
+
+    @media(max-width:767px){
+        font-size: 14px;
+    }
+}
