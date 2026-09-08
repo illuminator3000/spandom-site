@@ -1,0 +1,67 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <section class="detail-news">
+            <div class="container-fluid">
+                <div class="row row--catalog">
+                    <div class="col-xl-6">
+                        <div class="news-detail-image">
+                            <div class="news-slider swiper-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="news-slide swiper-slide">
+                                        <div class="news-slide__image">
+                                            <img src="/images/news-detail.png" width="770" height="770" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news-slide swiper-slide">
+                                        <div class="news-slide__image">
+                                            <img src="/images/news-detail.png" width="770" height="770" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news-slide swiper-slide">
+                                        <div class="news-slide__image">
+                                            <img src="/images/news-detail.png" width="770" height="770" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="navigation-button-prev swiper-button-prev">
+                                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="58" height="58" rx="10" fill="white" />
+                                        <rect x="0.5" y="0.5" width="57" height="57" rx="9.5" stroke="black" stroke-opacity="0.1" />
+                                        <path d="M35 29.5H22M29 36L22 29.5L29 23" stroke="black" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="navigation-button-next swiper-button-next">
+                                    <svg style="transform: rotate(180deg);" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="58" height="58" rx="10" fill="white" />
+                                        <rect x="0.5" y="0.5" width="57" height="57" rx="9.5" stroke="black" stroke-opacity="0.1" />
+                                        <path d="M35 29.5H22M29 36L22 29.5L29 23" stroke="black" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="news-detail__content">
+                            <h1 class="news-detail__title">Бизнес-встреча в Беларуси</h1>
+                            <div class="news-detail__description">
+                                <p>Dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
+                                <h2>Подзаголовок 1</h2>
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Nulla consequat massa quis enim. </p>
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
+                                <h2>Подзаголовок 2</h2>
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         @@include('../components/news-items.html',{
+            'title': 'свежие новости',
+        })
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')

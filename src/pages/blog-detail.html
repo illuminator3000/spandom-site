@@ -1,0 +1,78 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <section class="detail-news">
+            <div class="container-fluid">
+                <div class="row row--catalog">
+                    <div class="col-xl-6">
+                        <div class="news-detail-image__container">
+                            <div class="news-detail-image">
+                                <div class="news-slider swiper-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="news-slide swiper-slide">
+                                            <div class="news-slide__image">
+                                                <img src="/images/blog-detail.png" width="770" height="770" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="news-slide swiper-slide">
+                                            <div class="news-slide__image">
+                                                <img src="/images/blog-detail.png" width="770" height="770" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="news-slide swiper-slide">
+                                            <div class="news-slide__image">
+                                                <img src="/images/blog-detail.png" width="770" height="770" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="navigation-button-prev swiper-button-prev">
+                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="58" height="58" rx="10" fill="white" />
+                                            <rect x="0.5" y="0.5" width="57" height="57" rx="9.5" stroke="black" stroke-opacity="0.1" />
+                                            <path d="M35 29.5H22M29 36L22 29.5L29 23" stroke="black" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="navigation-button-next swiper-button-next">
+                                        <svg style="transform: rotate(180deg);" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="58" height="58" rx="10" fill="white" />
+                                            <rect x="0.5" y="0.5" width="57" height="57" rx="9.5" stroke="black" stroke-opacity="0.1" />
+                                            <path d="M35 29.5H22M29 36L22 29.5L29 23" stroke="black" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="news-detail__content">
+                            <h1 class="news-detail__title">Укрывной спанбонд - Тренды 2026 от коммерческого директора Спанлайн</h1>
+                            <div class="news-detail__description">
+                                <p>Появление новых цветов спанбонда является важным моментом при изготовлении маскировочных сетей. Разрабатываемые и производимые цвета спанбонда в последующем используются для маскировки объектов, пошива спецодежды, скрытия движений и создания иллюзии невидимости.</p>
+                                <p>В последние годы производители начали предлагать новые цвета спанбонда, что значительно расширяет возможности для создания эффективных маскировочных решений. </p>
+                                <h2>О преимуществах новых цветов:</h2>
+                                <ul>
+                                    <li>Новые оттенки, такие как горчица,койот, коричневый и серый, позволяют лучше сливаться с природными ландшафтами, что делает маскировочные сети более эффективными в различных условиях.</li>
+                                    <li>Цветовая палитра спанбонда позволяет использовать его в охоте, рыбалке, а также в ландшафтном дизайне.</li>
+                                    <li>- Современные технологии производства обеспечивают высокую прочность и устойчивость к ультрафиолетовому излучению, что делает новые цвета спанбонда долговечными и надежными.</li>
+                                </ul>
+                                <h2>Рекомендации по выбору цвета спанбонда:</h2>
+                                <p>Перед выбором цвета важно проанализировать окружающую среду, в которой будет использоваться маскировочная сеть. Это поможет выбрать наиболее подходящий оттенок.</p>
+                                <p>Рекомендуется провести тестирование различных цветов в реальных условиях, чтобы определить, какой из них обеспечивает наилучший эффект маскировки.</p>
+                                <p>Новые цвета спанбонда открывают новые горизонты для создания маскировочных сетей. Они не только улучшают маскировку, но и расширяют возможности применения. Выбор правильного цвета может значительно повысить эффективность маскировки в различных условиях.</p>
+                                <h2>Трендовые расцветки:</h2>
+                                @@include('../components/trand-products.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         @@include('../components/news-material.html')
+         @@include('../components/news-items.html',{
+            'title': 'Последние обновления',
+        })
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')

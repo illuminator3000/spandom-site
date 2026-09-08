@@ -1,0 +1,13 @@
+.catalog-filter__item-blog{
+    input{
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+    }
+    .catalog-tags__item{
+        max-width: max-content;
+    }
+}
+.catalog-filter__element-title--blog{
+    pointer-events: none;
+}

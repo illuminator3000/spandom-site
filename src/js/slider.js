@@ -112,5 +112,18 @@ document.addEventListener('DOMContentLoaded' , function(){
         lockClass: '',
         loop: true,
     })
+    const newsDetailSlider = new Swiper('.news-slider', {
+        slidesPerView: 1,
+        lockClass: '',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+        nextEl: '.navigation-button-next',
+        prevEl: '.navigation-button-prev',
+        },
+    })
 
 })
