@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded' , function(){
         slidesPerView: 1,
         lockClass: '',
         loop: true,
+        speed: 500,
+        autoplay: {
+            delay: 2000, // Задержка между сменами слайдов в мс
+            disableOnInteraction: false // Не останавливать автопрокрутку при свайпе/клике
+        },
         breakpoints: {
         768: {
             pagination: {
@@ -66,6 +71,11 @@ document.addEventListener('DOMContentLoaded' , function(){
         freeModeMomentumRatio: 0.8,
         freeModeMomentumVelocityRatio: 0.8,
         touchRatio: 1.2,
+        speed: 500,
+        autoplay: {
+            delay: 2000, // Задержка между сменами слайдов в мс
+            disableOnInteraction: false // Не останавливать автопрокрутку при свайпе/клике
+        },
         navigation: {
         nextEl: '.navigation-button-next',
         prevEl: '.navigation-button-prev',
