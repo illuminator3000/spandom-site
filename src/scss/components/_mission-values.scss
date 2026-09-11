@@ -1,0 +1,86 @@
+.row--mission-values {
+    gap:20px 0;
+}
+.quote-block {
+  background: transparent;
+  border-radius: 40px;
+  border: 1px solid var(--stroke-gray-bg);
+  padding: 50px;
+  position: relative;
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: center;
+  z-index: 1;
+
+  p {
+    text-wrap: pre;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 27px;
+    height: 20px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::before {
+    top: 25px;
+    left: 25px;
+    background-image: url('images/quotation-marks_left.svg');
+  }
+
+  &::after {
+    bottom: 25px;
+    right: 25px;
+    background-image: url('images/quotation-marks_right.svg');
+  }
+}
+
+.mission-values {
+
+  &__quote {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--stroke-gray-bg);
+    margin-bottom: 40px;
+
+    h2 {
+      font-weight: 600;
+      font-size: 25px;
+      margin: 0 0 20px 0;
+    }
+
+    p {
+      line-height: 1.45;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    border-radius: 40px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
