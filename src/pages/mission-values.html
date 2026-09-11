@@ -1,0 +1,53 @@
+@@include('../components/header.html')
+<main>
+    @@include('../components/breadscrumbs.html')
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><h1 class="section-title">Миссия и ценности</h1></div>
+        </div>
+    </div>
+    <section class="section--mb">
+        <div class="container-fluid">
+            <div class="row row--mission-values">
+                <div class="col-xl-6"> 
+                    <div class="mission-values__content">
+                        <div class="mission-values__quote quote-block">
+                            <p>
+                                «Благодаря новым технологиям производства,
+                                современному оборудованию и оперативной работе сотрудников, 
+                                мы своевременно производим и предлагаем рынку 
+                                самую востребованную продукцию»
+                            </p>
+                        </div>
+                        <div class="mission-values__item">
+                            <h2>Наша цель:</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            </p>
+                        </div>
+                        <div class="mission-values__item">
+                            <h2>Наша миссия:</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6"> 
+                    <div class="mission-values__image">
+                        <img src="/images/mission-values.jpg" width="770" height="420" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    @@include('../components/values-items.html',{
+    'title': 'наши ценности',
+    })
+    @@include('../components/inline-form.html')
+</main>
+@@include('../components/footer.html')
