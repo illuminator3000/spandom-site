@@ -135,5 +135,18 @@ document.addEventListener('DOMContentLoaded' , function(){
         prevEl: '.navigation-button-prev',
         },
     })
+    const partnershipDetailSlider = new Swiper('.partnership-slider', {
+        slidesPerView: 1,
+        lockClass: '',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+        nextEl: '.navigation-button-next',
+        prevEl: '.navigation-button-prev',
+        },
+    })
 
 })
