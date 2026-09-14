@@ -1,0 +1,121 @@
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--gray-bg);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 100%;
+    margin-left: auto;
+
+    @media(max-width:575px) {
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 20px;
+
+        @media(max-width:767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+
+        &--full {
+            width: 100%;
+        }
+
+        .required {
+            color: var(--pink);
+        }
+    }
+
+    &__textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    &__submit {
+        max-width: 284px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        color: #666;
+        cursor: pointer;
+        position: relative;
+
+        input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
+        span {
+            position: relative;
+            padding-left: 28px;
+            line-height: 1.4;
+            user-select: none;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 2px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid var(--stroke-dark-gr-bg);
+                border-radius: 3px;
+                background: transparent;
+                transition: all 0.2s ease;
+                flex-shrink: 0;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: 4px;
+                width: 6px;
+                height: 10px;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg) scale(0);
+                transition: transform 0.2s ease;
+            }
+        }
+
+        input[type="checkbox"]:checked+span::before {
+            background: var(--pink);
+            border-color: var(--pink);
+        }
+
+        input[type="checkbox"]:checked+span::after {
+            transform: rotate(45deg) scale(1);
+        }
+
+        input[type="checkbox"]:focus-visible+span::before {
+            border-color: var(--pink);
+        }
+
+        &:hover input[type="checkbox"]+span::before {
+            border-color: var(--pink);
+        }
+    }
+}

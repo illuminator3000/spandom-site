@@ -1,9 +1,16 @@
-.inline-form-block{
+.inline-form-block {
     margin: 20px 0;
-    &__tab{
+
+    &__tab {
         margin-bottom: 10px;
+
+        &--green {
+            background: var(--green);
+            color: var(--black);
+        }
     }
-    &__container{
+
+    &__container {
         display: flex;
         align-items: flex-end;
         padding: 40px;
@@ -11,73 +18,83 @@
         background: var(--gray-dark-bg);
         gap: 42px;
 
-        @media(max-width:1199px){
+        @media(max-width:1199px) {
             flex-direction: column;
             align-items: flex-start;
         }
-        @media(max-width:575px){
-             padding: 30px;
+
+        @media(max-width:575px) {
+            padding: 30px;
         }
     }
-    &__content{
+
+    &__content {
         max-width: 624px;
         flex: 0 1 auto;
     }
 
-    &__title{
+    &__title {
         font-size: 50px;
-        @media(max-width:1199px){
+
+        @media(max-width:1199px) {
             margin-bottom: 0px;
         }
-        @media(max-width:575px){
+
+        @media(max-width:575px) {
             font-size: 30px;
         }
     }
-    &__form{
+
+    &__form {
         display: flex;
         align-items: flex-end;
         flex: 1 0 auto;
         gap: 20px;
-        @media(max-width:1199px){
+
+        @media(max-width:1199px) {
             flex: 1 1 100%;
             width: 100%;
         }
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             flex-direction: column;
         }
-        label{
+
+        label {
             display: flex;
             flex-direction: column;
             gap: 10px;
             flex: 1;
-            @media(max-width:767px){
+
+            @media(max-width:767px) {
                 width: 100%;
             }
-            span{
+
+            span {
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 110%;
                 color: var(--gray-text);
 
-                span{
+                span {
                     color: var(--pink);
                 }
             }
 
-            input{
-                min-width:400px;
+            input {
+                min-width: 400px;
 
-                @media(max-width:575px){
+                @media(max-width:575px) {
                     min-width: 100%;
                 }
             }
         }
 
-        button{
+        button {
             max-width: 284px;
-            @media(max-width:767px){
-               max-width: 100%;
+
+            @media(max-width:767px) {
+                max-width: 100%;
             }
         }
     }
