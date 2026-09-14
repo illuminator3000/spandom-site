@@ -1,0 +1,94 @@
+@@include('../components/header.html')
+<main>
+    @@include('../components/breadscrumbs.html')
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><h1 class="section-title">Изготовление <br> на заказ</h1></div>
+        </div>
+    </div>
+    <section class="section--mb">
+        <div class="container-fluid">
+            <div class="row row--custom-made">
+                <div class="col-xl-6"> 
+                    <div class="custom-made__content">
+                        <div class="custom-made__item">
+                            <h2>Что мы можем изготовить на заказ?</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            </p>
+                        </div>
+                        <div class="custom-made__item">
+                            <h2>Условия сотрудничества</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6"> 
+                    <div class="custom-made__image">
+                        <div class="custom-made-slider swiper-slider">
+                            <div class="swiper-wrapper">
+                                <div class="custom-made-slide swiper-slide">
+                                    <div class="custom-made-slide__image">
+                                        <img src="/images/custom-made.jpg" width="770" height="560" alt="">
+                                    </div>
+                                </div>
+                                <div class="custom-made-slide swiper-slide">
+                                    <div class="custom-made-slide__image">
+                                        <img src="/images/custom-made.jpg" width="770" height="560" alt="">
+                                    </div>
+                                </div>
+                                <div class="custom-made-slide swiper-slide">
+                                    <div class="custom-made-slide__image">
+                                        <img src="/images/custom-made.jpg" width="770" height="560" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="navigation-button-prev swiper-button-prev">
+                                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="58" height="58" rx="10" fill="white" />
+                                    <rect x="0.5" y="0.5" width="57" height="57" rx="9.5" stroke="black" stroke-opacity="0.1" />
+                                    <path d="M35 29.5H22M29 36L22 29.5L29 23" stroke="black" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="navigation-button-next swiper-button-next">
+                                <svg style="transform: rotate(180deg);" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="58" height="58" rx="10" fill="white" />
+                                    <rect x="0.5" y="0.5" width="57" height="57" rx="9.5" stroke="black" stroke-opacity="0.1" />
+                                    <path d="M35 29.5H22M29 36L22 29.5L29 23" stroke="black" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class = "section product-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title section-slider-title">Наши решения</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                        @@include('../components/product-slider.html')
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('../components/callback-section.html')
+    @@include('../components/inline-form.html')
+</main>
+@@include('../components/footer.html')

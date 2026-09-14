@@ -1,0 +1,22 @@
+<form action="" class="request-form">
+    <div class="request-form__row">
+        <label class="request-form__label">
+            <span>Ваше имя <span class="required">*</span></span>
+            <input class="default-input-text" type="text" name="name" required placeholder="Например, Андрей">
+        </label>
+        <label class="request-form__label">
+            <span>Ваш номер телефона <span class="required">*</span></span>
+            <input class="default-input-text" type="tel" name="phone" required placeholder="+7 (900) 000-00-00">
+        </label>
+    </div>
+    <label class="request-form__label request-form__label--full">
+        <span>Опишите вашу идею <span class="required">*</span></span>
+        <textarea class="default-input-text request-form__textarea" name="idea" required
+            placeholder="Суть запроса – сформулируйте вашу задачу в свободной форме"></textarea>
+    </label>
+    <button type="submit" class="default-btn request-form__submit">Отправить</button>
+    <label class="request-form__checkbox">
+        <input type="checkbox" name="agree" required>
+        <span>Даю согласие на обработку персональных данных</span>
+    </label>
+</form>
