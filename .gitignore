@@ -4,11 +4,29 @@ node_modules/
 # Папка с собранными файлами (собирается локально)
 dist/
 
-# Системные файлы
+# Битрикс
+/www/bitrix/
+/www/upload/
+/www/local/cache/
+/www/local/logs/
+
+# Docker (секреты)
+/docker/.env
+/docker/.env_sql
+/docker/.env_php
+/docker/.env_push*
+/docker/.env_redis
+/docker/.env_ssl
+/docker/.env_*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Система
 .DS_Store
 Thumbs.db
 *.log
-
-# Файлы IDE (если используете)
-.vscode/
 .idea/
+.vscode/
