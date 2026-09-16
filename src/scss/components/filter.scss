@@ -63,6 +63,7 @@
             width: 23px;
             height: 23px;
             margin-right: 9px;
+            margin-top:0;
         }
         span{
             font-weight: 400;
@@ -92,7 +93,7 @@
             left: 0;
             top: 0;
             bottom: 0;
-            background-image: url('/images/check.svg');
+            background-image: url('/local/templates/illuminator/assets/images/check.svg');
             width: 23px;
             height: 23px;
             background-repeat: no-repeat;

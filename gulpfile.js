@@ -12,23 +12,23 @@ const buffer = require('gulp-buffer');
 const paths = {
     styles: {
         src: 'src/scss/**/*.scss',
-        dest: 'dist/css/'
+        dest: 'www/local/templates/illuminator/assets/css/'
     },
     scripts: {
         src: 'src/js/**/*.js',
-        dest: 'dist/js/'
+        dest: 'www/local/templates/illuminator/assets/js/'
     },
     html: {
         src: 'src/pages/**/*.html',
-        dest: 'dist/pages/'
+        dest: 'www/local/templates/illuminator/assets/pages/'
     },
     images: {
         src: 'src/images/**/*',
-        dest: 'dist/images/'
+        dest: 'www/local/templates/illuminator/assets/images/'
     },
      swiper: {
         src: 'node_modules/swiper/swiper-bundle.min.css',
-        dest: 'dist/css/'
+        dest: 'www/local/templates/illuminator/assets/css/'
     }
 };
 

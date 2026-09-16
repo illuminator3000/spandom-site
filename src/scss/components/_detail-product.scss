@@ -176,7 +176,7 @@
             
         &.show-all{
             li{
-                &:nth-child(n+3){
+                &:nth-child(n+4){
                     opacity: 1;
                     display: flex;
                 }
@@ -187,7 +187,7 @@
                 align-items: center;
                 gap: 5px;
 
-                &:nth-child(n+3){
+                &:nth-child(n+4){
                     opacity: 0;
                     display: none;
                     transition: all var(--default-transition) linear;

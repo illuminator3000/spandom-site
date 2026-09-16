@@ -5,6 +5,9 @@
     overflow: hidden;
     position: relative;
 
+    &__favorite{
+        margin-left:auto;
+    }
     &__image{
         img{
             width: 100%;
@@ -47,6 +50,11 @@
         line-height: 105%;
         color: #353738;
         margin-bottom: 10px;
+        display: block;
+        
+        &:hover{
+            color: #353738;
+        }
     }
 
     &__price{

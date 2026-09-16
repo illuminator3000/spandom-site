@@ -7,7 +7,9 @@
     overflow: hidden;
     margin-top: 50px;
 }
-
+.catalog-row-item{
+    display: contents;
+}
 @media(max-width:1600px){
     .category-slide{
         max-width: max-content;

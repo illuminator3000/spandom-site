@@ -1,0 +1,1 @@
+@charset "UTF-8";.animate-block [data-animate-type=show]{opacity:0;position:relative;bottom:-100%;transition:all .8s cubic-bezier(.25,.46,.45,.94);transition:all .8s ease-out}.animate-block [data-animate-type=show].active{opacity:1;bottom:0}

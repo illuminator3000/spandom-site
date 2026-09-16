@@ -3,8 +3,11 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 
 body{
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     background: var(--gray-bg);
+}
+*{
+   font-family: var(--font-family) !important;
 }
 // Простой класс без миксина
 .container-custom {
