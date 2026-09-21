@@ -5,11 +5,12 @@ node_modules/
 dist/
 
 # Битрикс
-/www/bitrix/
-/www/upload/
-/www/local/cache/
-/www/local/logs/
+/bitrix/
+/upload/
+/local/cache/
+/local/logs/
 
+/www/
 # Docker (секреты)
 /docker/.env
 /docker/.env_sql
