@@ -61,3 +61,69 @@ if ($request->isAjaxRequest() && ($request->get('action') === 'showMore' || $req
 		'epilogue' => $epilogue,
 	));
 }
+// вывод 
+if(!$this->__template) {
+	$this->InitComponentTemplate();
+}
+$this->__template->SetViewTarget('tags');
+$intSectionID = $arResult['ID'];
+	if ($intSectionID) {
+
+		$rs = CIBlockSection::GetList(
+			[],
+			["ID" => $intSectionID, "IBLOCK_ID" => $arParams['IBLOCK_ID']],
+			false,
+			["ID", "CODE", "SECTION_PAGE_URL", "IBLOCK_ID"]
+		);
+		if ($arSection = $rs->GetNext()) {
+			$sectionUrl = $arSection["SECTION_PAGE_URL"];
+		}
+		$rs = CIBlockElement::GetList(
+			["SORT" => "ASC", "NAME" => "ASC"],
+			[
+				"IBLOCK_ID"         => 4,
+				"ACTIVE"            => "Y",
+				"PROPERTY_CATEGORY" => $intSectionID, // привязка к разделу
+			],
+			false,
+			false,
+			["ID", "NAME", "PROPERTY_FILTER_URL","PROPERTY_CATEGORY"]
+		);
+
+		while ($ar = $rs->Fetch()) {
+			
+			$tags[] = [
+				"ID"         => (int)$ar["ID"],
+				"NAME"       => $ar["NAME"],
+				"FILTER_URL" => $ar["PROPERTY_FILTER_URL_VALUE"],
+				"CATEGORY" => $ar['PROPERTY_CATEGORY_VALUE']
+			];
+		}
+
+	}
+?>
+	<div class="catalog-tags">
+		<ul class="catalog-tags__list">
+			<?foreach($tags as $tag):?>
+				<?
+					$apply = false;
+					$url = $sectionUrl.'/filter/'.$tag['FILTER_URL'].'/apply/';
+					if($arParams["SMART_FILTER_PATH"] == $tag['FILTER_URL']){
+						$apply = true;
+						$url = $sectionUrl.'/filter/clear/apply/';
+					}
+				?>
+			<li class="catalog-tags__item <?=($apply) ? 'active' : '';?>"
+				data-filter='<?=$url?>'>
+				<div class="catalog-tags__item-name"><?=$tag['NAME']?></div>
+				<div class="catalog-tags__item-icon">
+					<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</div>
+			</li>
+			<?endforeach;?>
+		</ul>
+	</div>
+<?
+$this->__template->EndViewTarget();

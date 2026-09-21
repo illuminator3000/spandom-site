@@ -75,58 +75,7 @@ $APPLICATION->IncludeComponent(
 				?>
 			</div>
 			<div class="col-xl-9">
-				<div class="catalog-tags">
-					<ul class="catalog-tags__list">
-						<li class="catalog-tags__item active">
-							<div class="catalog-tags__item-name">Для маскировочных сетей</div>
-							<div class="catalog-tags__item-icon">
-								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-						</li>
-						<li class="catalog-tags__item">
-							<div class="catalog-tags__item-name">На ленты для плетения сетей</div>
-							<div class="catalog-tags__item-icon">
-								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-						</li>
-						<li class="catalog-tags__item">
-							<div class="catalog-tags__item-name">Цветной спанбонд на ленты для сетей</div>
-							<div class="catalog-tags__item-icon">
-								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-						</li>
-						<li class="catalog-tags__item">
-							<div class="catalog-tags__item-name">Зелёный спанбонд для огорода</div>
-							<div class="catalog-tags__item-icon">
-								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-						</li>
-						<li class="catalog-tags__item">
-							<div class="catalog-tags__item-name">Для маскировочных сетей</div>
-							<div class="catalog-tags__item-icon">
-								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-						</li>
-						<li class="catalog-tags__item">
-							<div class="catalog-tags__item-name">Зелёный спанбонд для огорода</div>
-							<div class="catalog-tags__item-icon">
-								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.5 2L5.5 7M10.5 12L5.5 7M5.5 7L0.5 12M5.5 7L10.5 2" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-						</li>
-					</ul>
-				</div>
+				<?$APPLICATION->ShowViewContent('tags')?>
 				<?
 					$intSectionID = $APPLICATION->IncludeComponent(
 						"bitrix:catalog.section",
@@ -253,7 +202,8 @@ $APPLICATION->IncludeComponent(
 							'USE_COMPARE_LIST' => 'Y',
 							'BACKGROUND_IMAGE' => (isset($arParams['SECTION_BACKGROUND_IMAGE']) ? $arParams['SECTION_BACKGROUND_IMAGE'] : ''),
 							'COMPATIBLE_MODE' => (isset($arParams['COMPATIBLE_MODE']) ? $arParams['COMPATIBLE_MODE'] : ''),
-							'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : '')
+							'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : ''),
+							'SMART_FILTER_PATH' => $arResult['VARIABLES']["SMART_FILTER_PATH"]
 						),
 						$component
 					);
