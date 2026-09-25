@@ -1,0 +1,6 @@
+.sale-card.sale-card--img-only{
+    min-height: 100%;
+}
+.sale-card.sale-card--img-only img{
+    height: auto;
+}

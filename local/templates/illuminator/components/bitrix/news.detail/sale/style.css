@@ -1,0 +1,12 @@
+.sale-card__content-image img{
+	height: auto;
+	max-width: 100%;
+	object-fit: cover;
+}
+.sale-card{
+	background: none !important;
+}
+.sale-card__content{
+	
+	padding: 0 !important;
+}

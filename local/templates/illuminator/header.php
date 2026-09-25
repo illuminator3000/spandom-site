@@ -19,17 +19,23 @@
             <div class="col-12">
                 <div class="header-top">
                     <div class="header-logo">
-                        <div class="header-logo__image">
-                            <img src="<?= SITE_TEMPLATE_PATH?>/assets/images/logo.png" alt="" width="71" height="60">
-                        </div>
-                        <div class="header-logo__text">Товары для дома и дачи  от производителя СПАНЛАЙН оптом и в розницу</div>
+                        <?if($APPLICATION->GetCurPage() == '/'):?>
+                            <div class="header-logo__image">
+                                <img src="<?=SiteConfig::getProperty('LOGO')?>" alt="" width="71" height="60">
+                            </div>
+                        <?else:?>
+                            <a href = "/" class="header-logo__image">
+                                <img src="<?=SiteConfig::getProperty('LOGO')?>" alt="" width="71" height="60">
+                            </a>
+                        <?endif;?>
+                        <div class="header-logo__text"><?=SiteConfig::getProperty('LOGO_TEXT')?></div>
                     </div>
                     <div class="header-top__subtext">
                         <p>Работаем по всей России Производство в г. Иваново <a target="_blank" href="https://spangroup.ru">spangroup.ru</a></p>
                     </div>
                     <div class="header-top__contact">
                         <p>Звоните с 9.00 до 17.00:</p>
-                        <a href="tel:8 800-000-00-00">8 800-000-00-00</a>
+                        <a href="tel:<?=str_replace(array('(',')','-',' '),'',SiteConfig::getProperty('PHONE'))?>"><?=SiteConfig::getProperty('PHONE')?></a>
                     </div>
                     <form class="header-top__search">
                         <input type="text" required placeholder="Поиск">
@@ -116,14 +122,20 @@
                         <li class = "header-menu__item"> <a href="">Чат поддержки</a></li>
                     </ul>
                 </div>
-                <div class="header-bottom">
-                    <a class="header-bottom__link">Акции</a>
-                    <a class="header-bottom__link">Оптовикам</a>
-                    <a class="header-bottom__link">Для дома и сада</a>
-                    <a class="header-bottom__link">Медицинский спанбонд</a>
-                    <a class="header-bottom__link">Для строительства</a>
-                    <a class="header-bottom__link">Изготовление на заказ</a>
-                </div>
+                <?$APPLICATION->IncludeComponent("bitrix:menu","bottom_header",Array(
+                        "ROOT_MENU_TYPE" => "bottom_header", 
+                        "MAX_LEVEL" => "1", 
+                        "CHILD_MENU_TYPE" => "bottom_header", 
+                        "USE_EXT" => "Y",
+                        "DELAY" => "N",
+                        "ALLOW_MULTI_SELECT" => "Y",
+                        "MENU_CACHE_TYPE" => "N", 
+                        "MENU_CACHE_TIME" => "3600", 
+                        "MENU_CACHE_USE_GROUPS" => "Y", 
+                        "MENU_CACHE_GET_VARS" => "" 
+                    )
+                );?>
+                
             </div>
         </div>
     </div>

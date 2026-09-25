@@ -11,12 +11,12 @@ global $APPLICATION;
 if(empty($arResult))
 	return "";
 
-$strReturn = '<section class="breadscrumbs">';
+$strReturn = '<section class="breadscrumbs" id = "navigation">';
 $strReturn .= '<div class="container-fluid">';
 $strReturn .= '<div class="row">';
 $strReturn .= '<div class="col-12">';
 
-$strReturn .= '<ul class=" breadscrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList" id = "navigation"> ';
+$strReturn .= '<ul class=" breadscrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList" > ';
 
 $itemSize = count($arResult);
 for($index = 0; $index < $itemSize; $index++)

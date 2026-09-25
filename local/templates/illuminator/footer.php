@@ -74,21 +74,27 @@
             <div class="col-12">
                 <div class="footer__bottom">
                     <div class="footer__logo">
-                        <div class="footer__logo-image">
-                            <img src="<?= SITE_TEMPLATE_PATH?>/assets/images/logo.png" width="84" height="71" loading="lazy" alt="">
-                        </div>
+                        <?if($APPLICATION->GetCurPage() == '/'):?>
+                            <div class="footer__logo-image">
+                                <img src="<?=SiteConfig::getProperty('LOGO')?>" width="84" height="71" loading="lazy" alt="">
+                            </div>
+                        <?else:?>
+                            <a  href = "/" class="footer__logo-image">
+                                <img src="<?=SiteConfig::getProperty('LOGO')?>" width="84" height="71" loading="lazy" alt="">
+                            </a>
+                        <?endif;?>
                         <div class="footer__logo-subtext">
-                            Товары для дома и дачи  от производителя СПАНЛАЙН оптом и в розницу
+                            <?=SiteConfig::getProperty('LOGO_TEXT')?>
                         </div>
                     </div>
                     <div class="footer__number">
                         <p>Звоните с 9.00 до 17.00:</p>
-                        <a href="tel:8 800-000-00-00">8 800-000-00-00</a>
+                        <a href="tel:<?=str_replace(array('(',')','-',' '),'',SiteConfig::getProperty('PHONE'))?>"><?=SiteConfig::getProperty('PHONE')?></a>
                     </div>
                     <div class="footer__messangers">
-                        <a class="header-bottom__link">ВКонтакте</a>
-                        <a class="header-bottom__link">Max</a>
-                        <a class="header-bottom__link">Telegram</a>
+                        <a href = "<?=SiteConfig::getProperty('VK')?>" class="header-bottom__link">ВКонтакте</a>
+                        <a href = "<?=SiteConfig::getProperty('MAX')?>" class="header-bottom__link">Max</a>
+                        <a href = "<?=SiteConfig::getProperty('TELEGRAM')?>" class="header-bottom__link">Telegram</a>
                     </div>
                 </div>
             </div>

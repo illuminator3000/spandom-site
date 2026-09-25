@@ -1,0 +1,4 @@
+.catalog-filter__items.catalog-filter__items--blog{
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,35 +1,11 @@
 <?php
 $arUrlRewrite=array (
-  1 => 
-  array (
-    'CONDITION' => '#^\\/?\\/mobileapp/jn\\/(.*)\\/.*#',
-    'RULE' => 'componentName=$1',
-    'ID' => NULL,
-    'PATH' => '/bitrix/services/mobileapp/jn.php',
-    'SORT' => 100,
-  ),
   3 => 
   array (
     'CONDITION' => '#^/bitrix/services/ymarket/#',
     'RULE' => '',
     'ID' => '',
     'PATH' => '/bitrix/services/ymarket/index.php',
-    'SORT' => 100,
-  ),
-  0 => 
-  array (
-    'CONDITION' => '#^/stssync/calendar/#',
-    'RULE' => '',
-    'ID' => 'bitrix:stssync.server',
-    'PATH' => '/bitrix/services/stssync/calendar/index.php',
-    'SORT' => 100,
-  ),
-  6 => 
-  array (
-    'CONDITION' => '#^/personal/order/#',
-    'RULE' => '',
-    'ID' => 'bitrix:sale.personal.order',
-    'PATH' => '/personal/order/index.php',
     'SORT' => 100,
   ),
   7 => 
@@ -40,7 +16,7 @@ $arUrlRewrite=array (
     'PATH' => '/personal/index.php',
     'SORT' => 100,
   ),
-  9 => 
+  8 => 
   array (
     'CONDITION' => '#^/catalog/#',
     'RULE' => '',
@@ -48,7 +24,7 @@ $arUrlRewrite=array (
     'PATH' => '/catalog/index.php',
     'SORT' => 100,
   ),
-  8 => 
+  5 => 
   array (
     'CONDITION' => '#^/store/#',
     'RULE' => '',
@@ -56,15 +32,23 @@ $arUrlRewrite=array (
     'PATH' => '/store/index.php',
     'SORT' => 100,
   ),
-  2 => 
+  4 => 
   array (
-    'CONDITION' => '#^/rest/#',
+    'CONDITION' => '#^/sale/#',
     'RULE' => '',
-    'ID' => NULL,
-    'PATH' => '/bitrix/services/rest/index.php',
+    'ID' => 'bitrix:news',
+    'PATH' => '/sale/index.php',
     'SORT' => 100,
   ),
-  4 => 
+  6 => 
+  array (
+    'CONDITION' => '#^/blog/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/blog/index.php',
+    'SORT' => 100,
+  ),
+  9 => 
   array (
     'CONDITION' => '#^/news/#',
     'RULE' => '',
