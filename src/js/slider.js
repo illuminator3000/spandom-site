@@ -1,165 +1,172 @@
 document.addEventListener('DOMContentLoaded' , function(){
-    
-    const fsSlider = new Swiper('.fs_slider', {
-        slidesPerView: 1,
-        lockClass: '',
-        loop: true,
-        speed: 500,
-        autoplay: {
-            delay: 2000, // Задержка между сменами слайдов в мс
-            disableOnInteraction: false // Не останавливать автопрокрутку при свайпе/клике
-        },
-        breakpoints: {
-        768: {
+    function initAllSliders(){
+
+        const fsSlider = new Swiper('.fs_slider', {
+            slidesPerView: 1,
+            lockClass: '',
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 2000, // Задержка между сменами слайдов в мс
+                disableOnInteraction: false // Не останавливать автопрокрутку при свайпе/клике
+            },
+            breakpoints: {
+            768: {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            },
+        }
+        })
+        const interestingSlider = new Swiper('.interesting-slider', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            spaceBetween: 14,
+            speed: 400,
+            grabCursor: true,
+            lockClass: '',
+            freeModeMomentum: true,
+            freeModeMomentumRatio: 0.8,
+            freeModeMomentumVelocityRatio: 0.8,
+            touchRatio: 1.2,
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+                breakpoints: {
+                1600:{
+                    slidesPerView: 6,
+                },
+            }
+        })
+        const categorySlider = new Swiper('.category-slider', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            spaceBetween: 14,
+            speed: 400,
+            grabCursor: true,
+            lockClass: '',
+            freeModeMomentum: true,
+            freeModeMomentumRatio: 0.8,
+            freeModeMomentumVelocityRatio: 0.8,
+            touchRatio: 1.2,
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+                breakpoints: {
+                1600:{
+                    slidesPerView: 4,
+                },
+            }
+        })
+        const productsSlider = new Swiper('.product-slider', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            spaceBetween: 14,
+            speed: 400,
+            lockClass: '',
+            grabCursor: true,
+            freeModeMomentum: true,
+            freeModeMomentumRatio: 0.8,
+            freeModeMomentumVelocityRatio: 0.8,
+            touchRatio: 1.2,
+            speed: 500,
+            autoplay: {
+                delay: 2000, // Задержка между сменами слайдов в мс
+                disableOnInteraction: false // Не останавливать автопрокрутку при свайпе/клике
+            },
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+                breakpoints: {
+                1600:{
+                    slidesPerView: 4,
+                },
+            }
+        })
+        const advantagesSlider = new Swiper('.advantages-slider', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            spaceBetween: 14,
+            speed: 400,
+            lockClass: '',
+            grabCursor: true,
+            freeModeMomentum: true,
+            freeModeMomentumRatio: 0.8,
+            freeModeMomentumVelocityRatio: 0.8,
+            touchRatio: 1.2,
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+                breakpoints: {
+                1600:{
+                    slidesPerView: 4,
+                },
+            }
+        })
+
+        const productSlider = new Swiper('.detail-product__slider', {
+            slidesPerView: 1,
+            lockClass: '',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        })
+        const reviewsSlider = new Swiper('.reviews-block__slider', {
+            slidesPerView: 1,
+            lockClass: '',
+            loop: true,
+        })
+        const newsDetailSlider = new Swiper('.news-slider', {
+            slidesPerView: 1,
+            lockClass: '',
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-        },
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+        })
+        const partnershipSlider = new Swiper('.partnership-slider', {
+            slidesPerView: 1,
+            lockClass: '',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+        })
+        const customMadepSlider = new Swiper('.custom-made-slider', {
+            slidesPerView: 1,
+            lockClass: '',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+            nextEl: '.navigation-button-next',
+            prevEl: '.navigation-button-prev',
+            },
+        })
     }
-    })
-    const interestingSlider = new Swiper('.interesting-slider', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        spaceBetween: 14,
-        speed: 400,
-        grabCursor: true,
-        lockClass: '',
-        freeModeMomentum: true,
-        freeModeMomentumRatio: 0.8,
-        freeModeMomentumVelocityRatio: 0.8,
-        touchRatio: 1.2,
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-            breakpoints: {
-            1600:{
-                slidesPerView: 6,
-            },
-        }
-    })
-    const categorySlider = new Swiper('.category-slider', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        spaceBetween: 14,
-        speed: 400,
-        grabCursor: true,
-        lockClass: '',
-        freeModeMomentum: true,
-        freeModeMomentumRatio: 0.8,
-        freeModeMomentumVelocityRatio: 0.8,
-        touchRatio: 1.2,
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-            breakpoints: {
-            1600:{
-                slidesPerView: 4,
-            },
-        }
-    })
-    const productsSlider = new Swiper('.product-slider', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        spaceBetween: 14,
-        speed: 400,
-        lockClass: '',
-        grabCursor: true,
-        freeModeMomentum: true,
-        freeModeMomentumRatio: 0.8,
-        freeModeMomentumVelocityRatio: 0.8,
-        touchRatio: 1.2,
-        speed: 500,
-        autoplay: {
-            delay: 2000, // Задержка между сменами слайдов в мс
-            disableOnInteraction: false // Не останавливать автопрокрутку при свайпе/клике
-        },
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-            breakpoints: {
-            1600:{
-                slidesPerView: 4,
-            },
-        }
-    })
-    const advantagesSlider = new Swiper('.advantages-slider', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        spaceBetween: 14,
-        speed: 400,
-        lockClass: '',
-        grabCursor: true,
-        freeModeMomentum: true,
-        freeModeMomentumRatio: 0.8,
-        freeModeMomentumVelocityRatio: 0.8,
-        touchRatio: 1.2,
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-            breakpoints: {
-            1600:{
-                slidesPerView: 4,
-            },
-        }
-    })
+    initAllSliders();
 
-    const productSlider = new Swiper('.detail-product__slider', {
-        slidesPerView: 1,
-        lockClass: '',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        }
-    })
-    const reviewsSlider = new Swiper('.reviews-block__slider', {
-        slidesPerView: 1,
-        lockClass: '',
-        loop: true,
-    })
-    const newsDetailSlider = new Swiper('.news-slider', {
-        slidesPerView: 1,
-        lockClass: '',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-    })
-    const partnershipSlider = new Swiper('.partnership-slider', {
-        slidesPerView: 1,
-        lockClass: '',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-    })
-    const customMadepSlider = new Swiper('.custom-made-slider', {
-        slidesPerView: 1,
-        lockClass: '',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-        nextEl: '.navigation-button-next',
-        prevEl: '.navigation-button-prev',
-        },
-    })
-
+    BX.addCustomEvent('onAjaxSuccess', function () {
+        // небольшая задержка, чтобы DOM успел обновиться
+        setTimeout(initAllSliders, 50);
+    });
 })
