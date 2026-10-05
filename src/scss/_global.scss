@@ -264,3 +264,9 @@ h1.section-title{
   position: sticky;
   top: 10px;
 }
+
+.grey-btn{
+  background: var(--gray-dark-bg);
+  border-color: var(--gray-dark-bg);
+  color: var(--black);
+}
