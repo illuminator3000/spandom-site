@@ -1,0 +1,126 @@
+.vakancy-block__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.vakancy-block__item{
+    background: var(--white);
+    border-radius: 40px;
+    padding: 40px;
+            @media(max-width:575px) {
+                padding: 30px;
+                border-radius: 30px;   
+            }
+
+    &-top-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        cursor: pointer;
+        p{
+            font-weight: 500;
+            font-size: 25px;
+            color: var(--black);
+
+
+            @media(max-width:575px) {
+                 font-size: 16px;   
+            }
+        }
+        div{
+            transition: all .2s ease;
+        }
+        &.active{
+            div{
+                transform: rotateX(180deg);
+            }
+        }
+    }
+    &-top-sub{
+        font-weight: 400;
+        font-size: 19px;
+        color: var(--light-gray-text);
+        margin-top: 10px;
+
+        @media(max-width:575px) {
+            font-size: 15px;   
+        }
+    }
+
+    &-body{
+        display: none;
+        margin-top: 20px;
+
+        p{
+            @media(max-width:575px) {
+                font-size: 15px;   
+            }
+        }
+    }
+}
+
+.vakancy-condition{
+    background: var(--white);
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &__icon{
+        margin-bottom: 117px;
+
+        svg{
+            min-width: 88px;
+            height: auto;
+        }
+    }
+    &__name{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 125%;
+        color: var(--gray-text);
+        margin-top: auto;
+    }
+
+    &__value{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 110%;
+        color: var(--black);
+    }
+}
+
+.vacancy-steps .values-card{
+    position: relative;
+    overflow: visible;
+
+    &::before{
+        content: '';
+        width: 55px;
+        height: 55px;
+        background-image: url("/images/step.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: -38px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 2;
+    }
+}
+.vacancy-steps div:last-child > .values-card::before{
+    content: none;
+}
+
+@media(max-width:1199px){
+    .vacancy-steps div:nth-child(2) > .values-card::before{
+        content: none;
+    }
+}
+@media(max-width:767px){
+    .vacancy-steps div > .values-card::before{
+        content: none;
+    }
+}

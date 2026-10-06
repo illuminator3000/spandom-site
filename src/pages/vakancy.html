@@ -1,0 +1,110 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"><h1 class="section-title">Вакансии</h1></div>
+            </div>
+        </div>
+        <section class = "vakancy-block section">
+            <div class="container-fluid">
+                <div class="row row--catalog">
+                    <div class="col-xl-6">
+                        <div class="vakancy-block__list">
+                            <div class="vakancy-block__item">
+                                <div class="vakancy-block__item-top">
+                                    <div class="vakancy-block__item-top-toggle">
+                                        <p>Менеджер по продажам</p>
+                                        <div>
+                                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00006L9 7.00006L17 1.00006" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vakancy-block__item-top-sub">Опыт работы: 2-3 года</div>
+                                </div>
+                                <div class="vakancy-block__item-body">
+                                    <p>Текст про вакансию</p>
+                                </div>
+                            </div>
+                            <div class="vakancy-block__item">
+                                <div class="vakancy-block__item-top">
+                                    <div class="vakancy-block__item-top-toggle">
+                                        <p>Упаковщик</p>
+                                        <div>
+                                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00006L9 7.00006L17 1.00006" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vakancy-block__item-top-sub">Опыт работы: не обязателен</div>
+                                </div>
+                                <div class="vakancy-block__item-body">
+                                    <p>Текст про вакансию</p>
+                                </div>
+                            </div>
+                            <div class="vakancy-block__item">
+                                <div class="vakancy-block__item-top">
+                                    <div class="vakancy-block__item-top-toggle">
+                                        <p>Специалист контроля качества </p>
+                                        <div>
+                                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00006L9 7.00006L17 1.00006" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vakancy-block__item-top-sub">Опыт работы: 3-5 лет</div>
+                                </div>
+                                <div class="vakancy-block__item-body">
+                                    <p>Текст про вакансию</p>
+                                </div>
+                            </div>
+                            <div class="vakancy-block__item">
+                                <div class="vakancy-block__item-top">
+                                    <div class="vakancy-block__item-top-toggle">
+                                        <p>Технолог по оборудованию</p>
+                                        <div>
+                                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00006L9 7.00006L17 1.00006" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vakancy-block__item-top-sub">Опыт работы: 3-5 лет</div>
+                                </div>
+                                <div class="vakancy-block__item-body">
+                                    <p>Текст про вакансию</p>
+                                </div>
+                            </div>
+                            <div class="vakancy-block__item">
+                                <div class="vakancy-block__item-top">
+                                    <div class="vakancy-block__item-top-toggle">
+                                        <p>Инженер-наладчик</p>
+                                        <div>
+                                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00006L9 7.00006L17 1.00006" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="vakancy-block__item-top-sub">Опыт работы: 3-5 лет</div>
+                                </div>
+                                <div class="vakancy-block__item-body">
+                                    <p>Текст про вакансию</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="vakancy-block__image">
+                            <img src="/images/vakancy.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('../components/vacancy-items.html',{
+    'title': 'Как развиваться в компании «Спандом»',
+    })
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')
