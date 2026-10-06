@@ -1,0 +1,68 @@
+.welcome-block{
+    background: var(--white);
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+
+}
+.welcome-block__info{
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.welcome-block__tab{
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 8px 18px;
+    background: var(--gray-dark-bg);
+    border-radius: 9px;
+    max-width: max-content;
+    margin-bottom: 22px;
+}
+.welcome-block__title{
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 103%;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+.welcome-block__text{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 135%;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+.welcom-block__slider{
+    max-width: 50%;
+}
+.welcome-btn{
+    max-width: 284px;
+}
+
+@media(max-width:1199px){
+    .welcome-block{
+        flex-direction: column;
+    }
+    .welcom-block__slider{
+        max-width: 100%;
+    }
+}
+
+
+@media(max-width:575px){
+    .welcome-block__title{
+        font-size: 29px;
+    }
+    .welcome-block__text{
+        font-size: 16px;
+    }
+    .welcome-btn{
+        max-width: 100%;
+    }
+}
