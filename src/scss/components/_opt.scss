@@ -1,0 +1,20 @@
+.row--mission .vakancy-condition__value{
+    margin-bottom: 15px ;
+}
+.row--mission .vakancy-condition__name{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.vakancy-condition{
+    height: 100%;
+}
+.map-block{
+    overflow: hidden;
+    border: 1px solid var(--stroke-gray-bg);
+    border-radius: 40px;
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

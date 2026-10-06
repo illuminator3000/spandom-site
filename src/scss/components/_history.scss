@@ -1,0 +1,116 @@
+.history{
+    overflow: hidden;
+}
+.history-block{
+    min-width: max-content;
+    margin-bottom: 50px;
+
+    &__text{
+       font-weight: 500;
+        font-size: 25px;
+        line-height: 145%;
+        color: var(--gray-text);
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: auto;
+        cursor: pointer;
+        
+        &.active{
+            circle{
+                &:first-of-type{
+                    stroke:#00F086;
+                }
+                &:last-of-type{
+                    fill: #00F086;
+                }
+            }
+
+           .history-block__text{
+                color: var(--black);
+            }
+        }
+    }
+    
+    &__content{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before{
+            content: '';
+            background-color: var(--stroke-gray-bg);
+            width: 100vw;
+            height: 1px;
+            position: absolute;
+            top: 18px;
+            left: -20px;
+        }
+    }
+
+    &__icon{
+        position: relative;
+        z-index: 2;
+    }
+}
+.history-info{
+    border-radius: 40px;
+    background: var(--white);
+    padding: 40px;
+    
+
+    &__tag{
+        font-weight: 600;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: var(--black);
+        padding: 8px 18px;
+        max-width: max-content;
+        margin-bottom: 30px;
+        background: var(--gray-dark-bg);
+        border-radius: 9px;
+    }
+}
+.history-element{
+    border-bottom: 1px solid var(--gray-bg);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    &:last-child{
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    &__name{
+        font-weight: 600;
+        font-size: 25px;
+        color: var(--black);
+        margin-bottom: 20px;
+    }
+
+    &__description{
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145%;
+            color: var(--black);
+            margin-bottom: 15px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.history-content{
+    display: flex;
+    gap: 20px;
+
+    &__slider{
+        max-width: 50%;
+    }
+}
