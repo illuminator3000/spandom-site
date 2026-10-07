@@ -4,7 +4,7 @@
         @@include('../components/breadscrumbs.html')
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12"><h1 class="section-title">личный кабинет</h1></div>
+                <div class="col-xl-6"><h1 class="section-title">Регистрация для физических лиц</h1></div>
             </div>
         </div>
         <section class = "">
@@ -12,10 +12,17 @@
                 <div class="row row--catalog">
                     <div class="col-xl-6">
                         <div class="form-container">
-                            <div class="form-title">Войдите в личный кабинет</div>
                             <form id = "auth" class="auth-form">
                                 <div class="form-fields">
                                     <label class="form-label">
+                                        <span>Ваше имя <span>*</span></span>
+                                        <input required class="default-input-text" type="text" placeholder="Например, Андрей">
+                                    </label>
+                                    <label class="form-label">
+                                        <span>Ваш номер телефона <span>*</span></span>
+                                        <input required class="default-input-text" type="phone" placeholder="+7 (900) 000-00-00">
+                                    </label>
+                                    <label class="form-label form-label--full">
                                         <span>Ваш e-mail <span>*</span></span>
                                         <input required class="default-input-text" type="email" placeholder="Адрес электронной почты">
                                     </label>
@@ -23,22 +30,22 @@
                                         <span>Пароль <span>*</span></span>
                                         <input required class="default-input-text" type="password" placeholder="Введите пароль">
                                     </label>
+                                    <label class="form-label">
+                                        <span>Подтвердите пароль <span>*</span></span>
+                                        <input required class="default-input-text" type="password" placeholder="Введите пароль ещё раз">
+                                    </label>
                                     <div class="form-bottom-field">
-                                        <label class="checkbox-label">
-                                            <input type="checkbox" required>
-                                            <span>Запомнить меня</span>
-                                        </label>
-                                        <a href="/forgot">Я не помню пароль</a>
+                                        <span class="form-attr">Пароль должен быть не менее 6 символов длиной.</span>
                                     </div>
                                 </div>
-                                <button class="default-btn auth-btn">Войти в личный кабинет</button>
+                                <button class="default-btn registration-btn">Зарегистрироваться</button>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" required>
+                                        <span>Даю согласие на обработку персональных данных</span>
+                                    </label>
                             </form>
                             <div class="form-container__bottom">
-                                <div class="form-container__bottom-registration">В первый раз здесь? Зарегистрируйтесь: </div>
-                                <div class="registration__links">
-                                    <a href="/registration/"  class="form-container__bottom-registration__link">Зарегистрироваться как физическое лицо</a>
-                                    <a href = "/registration/" class="form-container__bottom-registration__link">Зарегистрироваться как юридическое лицо</a>
-                                </div>
+                                <a href="/auth.html" class="form-bottom-link"> Уже есть аккаунт? <span>Авторизуйтесь</span></a>
                             </div>
                         </div>
                     </div>
