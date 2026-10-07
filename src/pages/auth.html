@@ -1,0 +1,73 @@
+
+    @@include('../components/header.html')
+    <main>
+        @@include('../components/breadscrumbs.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"><h1 class="section-title">личный кабинет</h1></div>
+            </div>
+        </div>
+        <section class = "section">
+            <div class="container-fluid">
+                <div class="row row--catalog">
+                    <div class="col-xl-6">
+                        <div class="form-container">
+                            <div class="form-title">Войдите в личный кабинет</div>
+                            <form id = "auth" class="auth-form">
+                                <div class="form-fields">
+                                    <label class="form-label">
+                                        <span>Ваш e-mail <span>*</span></span>
+                                        <input required class="default-input-text" type="email" placeholder="Адрес электронной почты">
+                                    </label>
+                                    <label class="form-label">
+                                        <span>Пароль <span>*</span></span>
+                                        <input required class="default-input-text" type="password" placeholder="Введите пароль">
+                                    </label>
+                                    <div class="form-bottom-field">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" required>
+                                            <span>Запомнить меня</span>
+                                        </label>
+                                        <a href="/forgot">Я не помню пароль</a>
+                                    </div>
+                                </div>
+                                <button class="default-btn auth-btn">Войти в личный кабинет</button>
+                            </form>
+                            <div class="form-container__bottom">
+                                <div class="form-container__bottom-registration">В первый раз здесь? Зарегистрируйтесь: </div>
+                                <div class="registration__links">
+                                    <a href="/registration/"  class="form-container__bottom-registration__link">Зарегистрироваться как физическое лицо</a>
+                                    <a href = "/registration/" class="form-container__bottom-registration__link">Зарегистрироваться как юридическое лицо</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="registration-advantages">
+                            <div class="registration-tab default-tab default-tab--new">почему стоит зарегистрироваться</div>
+                            <div class="registration-advantages__list">
+                                <div class="registration-advantages__item">
+                                    <div class="registration-advantages__item-name">Ранний доступ к акциям</div>
+                                    <div class="registration-advantages__item-description">Вы будете первым узнавать о горячих предложениях. Сначала они доступны в личном кабинете и только потом в общем доступе</div>
+                                </div>
+                                <div class="registration-advantages__item">
+                                    <div class="registration-advantages__item-name">Вы для нас - приоритет</div>
+                                    <div class="registration-advantages__item-description">Максимально быстро отвечаем на ваши запросы. Консультируем по оформленным заказам</div>
+                                </div>
+                                <div class="registration-advantages__item">
+                                    <div class="registration-advantages__item-name">Доступ к услугам</div>
+                                    <div class="registration-advantages__item-description">Не только реализуем товары, но также оказываем сопуствующие услуги</div>
+                                </div>
+                                <div class="registration-advantages__item">
+                                    <div class="registration-advantages__item-name">Быстрый доступ к заказам</div>
+                                    <div class="registration-advantages__item-description">Сохраняйте историю покупок, и в 1 клик повторяйте заказ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('../components/inline-form.html')
+    </main>
+    @@include('../components/footer.html')
