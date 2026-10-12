@@ -86,6 +86,32 @@
                                 <rect x="9" y="9.5" width="5" height="5" rx="1" fill="white" />
                             </svg>
                             Каталог
+
+                            <div class="dropdown-element">
+                                <div class="dropdown-element__content">
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:catalog.section.list",
+                                        "menu_footer", // или свой шаблон, например "menu"
+                                        [
+                                            "IBLOCK_TYPE"        => "catalog",          // тип инфоблока
+                                            "IBLOCK_ID"          => "2",                // ID инфоблока каталога
+                                            "SECTION_ID"         => "",                 // пусто = корневые разделы
+                                            "SECTION_CODE"       => "",
+                                            "COUNT_ELEMENTS"     => "N",                // не считать товары
+                                            "TOP_DEPTH"          => "1",                // только 1 уровень
+                                            "SECTION_FIELDS"     => ["NAME", "CODE",'SECTION_PAGE_URL'],   // какие поля нужны
+                                            "SECTION_USER_FIELDS"=> [],
+                                            "SECTION_URL"        => "",                 // возьмёт из настроек инфоблока
+                                            "CACHE_TYPE"         => "A",
+                                            "CACHE_TIME"         => "36000000",
+                                            "CACHE_GROUPS"       => "Y",
+                                            "ADD_SECTIONS_CHAIN" => "N",
+                                            "SHOW_MAIN" => 'N',
+                                        ],
+                                        false
+                                    );?>
+                                </div>
+                            </div>
                         </li>
                         <li class = "header-menu__item">
                             Получение и оплата 
@@ -95,11 +121,11 @@
                             <div class="dropdown-element">
                                 <div class="dropdown-element__content">
                                     <ul>
-                                        <li><a href="">Доставка ТК</a></li>
-                                        <li><a href="">Доставка по Иваново</a></li>
-                                        <li><a href="">Самовывоз Иваново</a></li>
-                                        <li><a href="">Способы оплаты</a></li>
-                                        <li><a href="">Способы оплаты</a></li>
+                                        <li><a href="/delivery-tk/">Доставка ТК</a></li>
+                                        <li><a href="/delivery-city/">Доставка по Иваново</a></li>
+                                        <li><a href="/delivery-storage/">Самовывоз Иваново</a></li>
+                                        <li><a href="/payment/">Способы оплаты</a></li>
+                                        <li><a href="/order-status/">Статус заказа</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,16 +135,37 @@
                             <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.750031 0.750031L5.75003 4.75003L10.75 0.750031" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
+                             <div class="dropdown-element">
+                                <div class="dropdown-element__content">
+                                    <ul>
+                                       <li><a href="/about/">О нас</a></li>
+                                        <li><a href="/mission-values/">Миссия и ценности</a></li>
+                                        <li><a href="/partnership/">Партнерство</a></li>
+                                        <li><a href="/vakancy/">Вакансии</a></li>
+                                        <li><a href="/documents/">Документы</a></li>
+                                        <li><a href="/our-production/">Наше производство</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class = "header-menu__item">
                             О компании 
                             <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.750031 0.750031L5.75003 4.75003L10.75 0.750031" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
+                            <div class="dropdown-element">
+                                <div class="dropdown-element__content">
+                                    <ul>
+                                        <li><a href="/blog/">Блог</a></li>
+                                        <li><a href="/news/">Новости</a></li>
+                                        <li><a href="/sale/">Акции</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class = "header-menu__item"><a href="">Сервис и поддержка</a> </li>
-                        <li class = "header-menu__item"> <a href="">Реквизиты</a>  </li>
-                        <li class = "header-menu__item"><a href="">Контакты</a> </li>
+                        <li class = "header-menu__item"><a href="/services-and-help/">Сервис и поддержка</a> </li>
+                        <li class = "header-menu__item"> <a href="/requsits/">Реквизиты</a>  </li>
+                        <li class = "header-menu__item"><a href="/contact/">Контакты</a> </li>
                         <li class = "header-menu__item"> <a href="">Чат поддержки</a></li>
                     </ul>
                 </div>

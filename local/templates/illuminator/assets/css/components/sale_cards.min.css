@@ -1,0 +1,1 @@
+.sale-card{border-radius:20px;padding:40px;height:auto}.sale-card--new{display:none}.sale-card--new__title{color:var(--white)}.sale-card__content{display:flex;flex-direction:column;height:100%}.sale-card__title{font-weight:600;font-size:50px;line-height:103%;text-transform:uppercase;color:var(--black);max-width:522px}

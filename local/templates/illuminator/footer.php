@@ -18,52 +18,59 @@
                 <div class="footer__content">
                     <div class="footer__container">
                         <div class="footer__item">
+                            <?$APPLICATION->IncludeComponent(
+                            "bitrix:catalog.section.list",
+                            "menu_footer", // или свой шаблон, например "menu"
+                            [
+                                "IBLOCK_TYPE"        => "catalog",          // тип инфоблока
+                                "IBLOCK_ID"          => "2",                // ID инфоблока каталога
+                                "SECTION_ID"         => "",                 // пусто = корневые разделы
+                                "SECTION_CODE"       => "",
+                                "COUNT_ELEMENTS"     => "N",                // не считать товары
+                                "TOP_DEPTH"          => "1",                // только 1 уровень
+                                "SECTION_FIELDS"     => ["NAME", "CODE",'SECTION_PAGE_URL'],   // какие поля нужны
+                                "SECTION_USER_FIELDS"=> [],
+                                "SECTION_URL"        => "",                 // возьмёт из настроек инфоблока
+                                "CACHE_TYPE"         => "A",
+                                "CACHE_TIME"         => "36000000",
+                                "CACHE_GROUPS"       => "Y",
+                                "ADD_SECTIONS_CHAIN" => "N",
+                                "SHOW_MAIN" => 'Y',
+                            ],
+                            false
+                        );?>
+                        </div>
+                        <div class="footer__item">
                             <ul>
-                                <li><a href="">Каталог</a></li>
-                                <li><a href="">Спанбонд в рулонах</a></li>
-                                <li><a href="">Двусторонний спанбонд в рулонах</a></li>
-                                <li><a href="">Спанбонд для маскировочных сетей</a></li>
-                                <li><a href="">Укрывной материал для растений</a></li>
-                                <li><a href="">Геотекстиль садовый/строительный</a></li>
-                                <li><a href="">Бинты и ленты садовые (строительные)</a></li>
-                                <li><a href="">Скатерти праздничные из спанбонда</a></li>
-                                <li><a href="">Простыни одноразовые с перфорацией в рулоне</a></li>
-                                <li><a href="">Плиссированный спанбонд</a></li>
+                                <li><a >Получение и оплата</a></li>
+                                <li><a href="/delivery-tk/">Доставка ТК </a></li>
+                                <li><a href="/delivery-city/">Доставка по Иваново</a></li>
+                                <li><a href="/delivery-storage/">Самовывоз Иваново</a></li>
+                                <li><a href="/payment/">Способы оплаты </a></li>
+                                <li><a href="/order-status/">Статус заказа</a></li>
                             </ul>
                         </div>
                         <div class="footer__item">
                             <ul>
-                                <li><a href="">Получение и оплата</a></li>
-                                <li><a href="">Доставка ТК </a></li>
-                                <li><a href="">Доставка по Иваново</a></li>
-                                <li><a href="">Самовывоз Иваново</a></li>
-                                <li><a href="">Способы оплаты </a></li>
-                                <li><a href="">Статус заказа</a></li>
+                                <li><a>О компании</a></li>
+                                <li><a href="/about/">О нас</a></li>
+                                <li><a href="/mission-values/">Миссия и ценности</a></li>
+                                <li><a href="/partnership/">Партнерство</a></li>
+                                <li><a href="/vakancy/">Вакансии</a></li>
+                                <li><a href="/documents/">Документы</a></li>
+                                <li><a href="/our-production/">Наше производство</a></li>
                             </ul>
                         </div>
                         <div class="footer__item">
                             <ul>
-                                <li><a href="">О компании</a></li>
-                                <li><a href="">О нас</a></li>
-                                <li><a href="">Миссия и ценности</a></li>
-                                <li><a href="">Партнерство</a></li>
-                                <li><a href="">Вакансии</a></li>
-                                <li><a href="">Документы</a></li>
-                                <li><a href="">Наше производство</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__item">
-                            <ul>
-                                <li><a href="">Информация для клиентов</a></li>
-                                <li><a href="">Блог</a></li>
-                                <li><a href="">Новости</a></li>
-                                <li><a href="">Акции</a></li>
+                                <li><a>Информация для клиентов</a></li>
+                                <li><a href="/blog/">Блог</a></li>
+                                <li><a href="/news/">Новости</a></li>
+                                <li><a href="/sale/">Акции</a></li>
                             </ul>
                             <ul>
-                                <li><a href="">Акции</a></li>
-                                <li><a href="">Акция1</a></li>
-                                <li><a href="">Акция2</a></li>
-                                <li><a href="">Акция3</a></li>
+                                <li><a href="/sale/">Акции</a></li>
+
                             </ul>
                         </div>
                     </div>
